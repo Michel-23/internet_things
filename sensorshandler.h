@@ -3,6 +3,7 @@
 #include "humidity.h"
 #include "Co2Sensor.h"
 #include "ATH22.h"
+#include "general.h"
 
 class SensorsHandler{
 private:

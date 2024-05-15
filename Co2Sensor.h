@@ -1,26 +1,17 @@
 #pragma once
 #include <iostream>
 #include <random>
-class Co2Sensors{
-private:
-    double _percent;
+#include "general.h"
 
-    void Update(){
-        double tmp = -10 + rand()%20;
-        _percent += tmp/10;
-        if(_percent > MAX_PERCENT) _percent = MAX_PERCENT;
-        if(_percent < 0) _percent = 0;
-    }
+class Co2Sensors: public general{
+private:
 
 public:
     const double MAX_PERCENT = 100;
+    const double MIN_PERCENT = 0;
 
     Co2Sensors(){
-        _percent = rand()% static_cast<int>(MAX_PERCENT);
+        _value = rand()% static_cast<int>(MAX_PERCENT);
     }
-    
-    double operator()(){
-        Update();
-        return _percent;
-    }
+
 };
