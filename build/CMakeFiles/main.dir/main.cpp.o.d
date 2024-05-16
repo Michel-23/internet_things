@@ -183,6 +183,7 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
+ /home/s23380426@unn.global/internet_things/general.h \
  /home/s23380426@unn.global/internet_things/humidity.h \
  /home/s23380426@unn.global/internet_things/Co2Sensor.h \
  /home/s23380426@unn.global/internet_things/PressureSensor.h \

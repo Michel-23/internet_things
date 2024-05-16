@@ -6,9 +6,10 @@ class PressureSensor: public general{
 private:
     
 public:
-    const double MAX_PRESSURE = 900;
-    const double MIN_PRESSURE = 600;
+
     PressureSensor(){
-        _value = MIN_PRESSURE+rand()%static_cast<int>(MAX_PRESSURE-MIN_PRESSURE);
+        MAXX = 900;
+        MINN = 600;
+        _value = MINN+rand()%static_cast<int>(MAXX - MINN);
     }
 };

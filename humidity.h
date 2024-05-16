@@ -7,10 +7,11 @@ class HumiditySensor: public general{
 private:
 
 public:
-    const double MAX_HUMIDITY = 100;
-    const double MIN_HUMIDITY = 0;
+
     HumiditySensor(){
-        _value = rand() % static_cast<int>(MAX_HUMIDITY);
+        MAXX = 100;
+        MINN = 0;
+        _value = rand() % static_cast<int>(MAXX);
     }
 
 };

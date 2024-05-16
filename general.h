@@ -1,4 +1,4 @@
-#include "TempSensors.h"
+#pragma once
 
 class general{
 protected:
@@ -13,10 +13,9 @@ protected:
             else if (_value<MINN)
                 _value=MINN;
         }
+public:
     double operator()(){
         AAAAA();
         return _value;
     }
-public:
-
 };
